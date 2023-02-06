@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const app = express()
 const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({extended:false}))
-app.get("/news/data",(req,res)=>{
+app.get("/",(req,res)=>{
     res.json({
         "status": "ok",
         "totalResults": 17253,
